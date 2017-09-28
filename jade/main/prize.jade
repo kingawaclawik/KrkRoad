@@ -1,0 +1,25 @@
+mixin reasone(title, desc, icon)
+  .col-xs-10.col-xs-offset-1.col-sm-12.col-sm-offset-0.col-lg-10.col-lg-offset-1.padding-bottom-xs
+    i.icon.icon-l(class=icon)
+    h4.text-uppercase !{title}
+    p !{desc}
+section#prize.padding-top-m.padding-bottom-m
+  .container
+    .row
+      .col-xs-10.col-xs-offset-1
+        h1.special-h1.padding-bottom-xs.text-center How to win the Prize for the Audience?
+    .row
+      .col-xs-10.col-xs-offset-1.padding-bottom-s.text-center
+        p.lead You don't have to participate in the program with your project to win the Prize. Just come to our Demo Day and you will get a chance to win Mi Air Purifier 2.
+    .row.center-container#airpurifier
+      .col-xs-12.col-sm-6.col-sm-offset-1.text-justify.center-col
+        .row.text-center
+          +reasone("1. Join the Demo Day event", "Find us on facebook and join the event","icon_social-network")
+          +reasone("2. Download Dragon Events App", "You can find it on App Store and Google Play", "icon_app")
+          +reasone("3. Come to the Demo Day", "on 24th of October at 18.00 at KPT, Podole 60", "icon_presentation")
+          +reasone("4. Answer a few questions", "Look for special sign, scan it and answer a question as fast as possible", "icon_questions")
+          +reasone("5. Win the Xiaomi Air Purifier 2", "The fastest person who will correctly answer questions from KRKroad Demo Day will win the prize", "icon_air-conditioner")
+          .clearfix
+      //.col-xs-12.col-sm-6.text-justify.center-col
+        img.center-col(src='assets/img/img-xiaomi.jpg', alt='Prize - Xiaomi Air Purifier', itemprop='logo', width="100%")
+ 

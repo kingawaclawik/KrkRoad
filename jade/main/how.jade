@@ -1,0 +1,20 @@
+mixin reasone(title, desc, icon)
+  .col-xs-10.col-xs-offset-1.col-sm-4.col-sm-offset-0.col-lg-4.padding-bottom-xs
+    i.icon.icon-xl(class=icon)
+    h4.text-uppercase !{title}
+    p !{desc}
+
+section#why.padding-top-m.padding-bottom-m
+  .container
+    .row
+      .col-xs-12.col-sm-10.col-sm-offset-1
+        h1.special-h1.padding-bottom-s.text-center Program’s benefits
+    .row.text-center
+      +reasone("Get feedback", "Challenge your business idea with experienced entrepreneurs and investors","icon_man")
+      +reasone("Pitching", "Pitch is key to success, learn how to do it perfectly", "icon_video-presentation")
+      +reasone("Competition", "There always is competition, discover great ways to present competitive background", "icon_goal")
+      .clearfix
+      +reasone("Investors", "Meet in person investors from Venture Capital Funds","icon_money")
+      +reasone("Corporates", "Get a chance to show your project to representatives of big companies", "icon_team")
+      +reasone("Demo day", "Present your project during the Demo Day in front of investors and corporate partners", "icon_trophy")
+      .clearfix

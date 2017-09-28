@@ -1,0 +1,19 @@
+mixin reasone(title, desc, icon)
+  .row.center-container
+    .col-xs-10.col-xs-offset-1.col-sm-4.col-sm-offset-0.col-lg-3.padding-bottom-xs.center-col.text-right
+      i.icon.icon-xxl(class=icon)
+    .col-xs-10.col-xs-offset-1.col-sm-4.col-sm-offset-0.col-lg-6.padding-bottom-xs.center-col
+      h3.text-uppercase !{title}
+      p.lead !{desc}
+
+section#training.padding-top-m.padding-bottom-m
+  .container
+    .row.padding-bottom-s
+      .col-xs-12.col-sm-10.col-sm-offset-1
+        h1.special-h1.padding-bottom-s.text-center How the training will look like? 
+    +reasone("By working on the content", "we will help you to prepare the content that the Investors and Corporates will love (lub will like and understand lub will understand and find interesting)","icon_conversation")
+    .clearfix
+    +reasone("By working on the visuals", "good deck is not only content, it’s important also how it looks like, let's make it look great!", "icon_web-design")
+    .clearfix
+    +reasone("By letting you pitch in front of us and providing feedback", "we will tell you where you could improve, expand or shorten your pitch, where to put emphasis and what to skip to make the most of the time you have", "icon_goal")
+    .clearfix
